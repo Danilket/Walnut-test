@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Walnut test</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__decorates decorates">
+			<svg class="decorates__wave-left">
+				<use xlink:href="#wave"></use>
+			</svg>
+			<svg class="decorates__wave-right">
+				<use xlink:href="#wave"></use>
+			</svg>
+		</div>
+		<div class="container">
+			<div class="header__top">
+				<div class="header__top-inner">
+					<div class="header__info">
+						<div class="header__logo-container">
+							<a>
+								<svg class="icon-logo">
+									<use xlink:href="#logo"></use>
+								</svg>
+							</a>
+							<h3 class="header__title">кремниевая родниковая вода «SiEnergy»</h3>
+						</div>
+						<div class="header__info-items info-items">
+							<div class="info-items__info info">
+								<button class="info__language">
+									<svg class="i" width="16" height="16">
+										<use xlink:href="#world"></use>
+									</svg>
+									<span class="info__country">Русский (Россия)</span>
+								</button>
+								<div class="info__change-language change-language">
+									<ul class="change-language__list">
+										<li class="change-language__item">
+											<a href="#">Русский (Россия)</a>
+										</li>
+										<li class="change-language__item">
+											<a href="#">Английский (США)</a>
+										</li>
+									</ul>
+								</div>
+								<div class="info__health">
+									<svg class="i" width="16" height="14">
+										<use xlink:href="#heart"></use>
+									</svg>
+									<span>ПОМОГАЕМ БЫТЬ ЗДОРОВЫМИ!</span>
+								</div>
+							</div>
+							<div class="info-items__contacts contacts">
+								<div class="contacts__top">
+									<a href="mailto:info@sienergy.water" class="contacts__mail">
+										<svg class="i" width="16" height="16">
+											<use xlink:href="#mail"></use>
+										</svg>
+										<span class="contacts__span">
+											info@sienergy.water
+										</span>
+									</a>
+									<a href="tel:79848487454" class="contacts__tel">
+										<svg class="i" width="16" height="16" style="fill: red;">
+											<use xlink:href="#tel"></use>
+										</svg>
+										<span class="contacts__span">
+											+7 (984) 848-74-54
+										</span>
+									</a>
+								</div>
+								<div class="contacts__bottom">
+									<div class="contacts__networks">
+										<span>Мы в соцсетях</span>
+										<a href="https://vk.com/">
+											<svg class="icon-vk" width="18" height="10">
+												<use xlink:href="#vk"></use>
+											</svg>
+										</a>
+										<a href="https://www.facebook.com/">
+											<svg class="icon-fb" width="9" height="18">
+												<use xlink:href="#fb"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__buttons buttons">
+							<div class="buttons__bottom">
+								<button class="buttons__entry btn">
+									<svg class="icon-key">
+										<use xlink:href="#key"></use>
+									</svg>
+									<span>войти</span>
+								</button>
+								<a href="#" class="buttons__cart btn">
+									<svg class="icon-cart">
+										<use xlink:href="#cart"></use>
+									</svg>
+									<div class="btn__circle">
+										99
+									</div>
+								</a>
+							</div>
+							<button class="buttons__call" data-fancybox data-src="#modal-callback">
+								обратный звонок
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container header__bottom-inner">
+				<nav class="menu">
+					<ul class="menu__list list">
+						<li class="list__item">
+							<a href="#">
+								история
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								НАША ВОДА
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								Акции
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								Образ жизни
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								ХОЧУ ВОДУ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								FAQ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								БЛОГ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								ОПТОВЫМ КЛИЕНТАМ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								контакты
+							</a>
+						</li>
+					</ul>
+					<button class="menu__button">
+						<div class="menu__btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<span class="menu__title">меню</span>
+					</button>
+				</nav>
+				<div class="menu-mobile">
+					<button class="menu__button--close">
+						<div class="menu__btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
+					<ul class="menu__list list list-mobile">
+						<li class="list__item">
+							<a href="#">
+								история
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								НАША ВОДА
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								Акции
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								Образ жизни
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								ХОЧУ ВОДУ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								FAQ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								БЛОГ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								ОПТОВЫМ КЛИЕНТАМ
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="#">
+								контакты
+							</a>
+						</li>
+					</ul>
+					<button class="buttons__call--menu" data-fancybox data-src="#modal-callback">
+						обратный звонок
+					</button>
+					<button class="info__language--mobile">
+						<span class="info__choise">Выбор языка</span>
+						<div class="info__language-inner">
+							<svg class="i" width="16" height="16">
+								<use xlink:href="#world"></use>
+							</svg>
+							<span class="info__country">Русский (Россия)</span>
+						</div>
+					</button>
+					<div class="info__change-language change-language">
+						<ul class="change-language__list">
+							<li class="change-language__item">
+								<a href="#">Русский (Россия)</a>
+							</li>
+							<li class="change-language__item">
+								<a href="#">Английский (США)</a>
+							</li>
+						</ul>
+					</div>
+					<div class="contacts__top--mobile">
+						<a href="mailto:info@sienergy.water" class="contacts__mail">
+							<svg class="i" width="16" height="16">
+								<use xlink:href="#mail"></use>
+							</svg>
+							<span class="contacts__span">
+								info@sienergy.water
+							</span>
+						</a>
+						<a href="tel:79848487454" class="contacts__tel">
+							<svg class="i" width="16" height="16">
+								<use xlink:href="#tel"></use>
+							</svg>
+							<span class="contacts__span">
+								+7 (984) 848-74-54
+							</span>
+						</a>
+					</div>
+					<div class="contacts__networks--mobile">
+						<span>Мы в соцсетях</span>
+						<a href="https://vk.com/">
+							<svg class="icon-vk" width="18" height="10">
+								<use xlink:href="#vk"></use>
+							</svg>
+						</a>
+						<a href="https://www.facebook.com/">
+							<svg class="icon-fb" width="9" height="18">
+								<use xlink:href="#fb"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="menu__overlay"></div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="modal">
+		<div class="modal__callback callback" id="modal-callback">
+			<h3 class="callback__title title">Обратный звонок</h3>
+			<p class="callback__request request">Оставьте заявку и мы свяжаемся с вами в течение 15 минут и ответим на все вопросы</p>
+			<form class="callback__form" action="">
+				<div class="callback__data">
+					<div class="callback__tel">
+						<label class="callback__name-title" for="number">Телефон*</label>
+						<input class="callback__content" id="number" placeholder="Ваш телефон" name="tel" type="tel">
+					</div>
+					<div class="callback__name">
+						<label class="callback__name-title" for="name">Имя*</label>
+						<input class="callback__content" id="name" placeholder="Ваше имя" name="name" type="text">
+					</div>
+				</div>
+
+				<label class="callback__confidencial-label" for="confidencial">
+					<input class="callback__confidencial" id="confidencial" name="checkbox" type="checkbox">
+					<span class="callback__check">
+						<svg class="callback__svg" width="17" height="20">
+							<use xlink:href="#check-box"></use>
+						</svg>
+					</span>
+					Я соглашаюсь с поликой конфиденциальности данных и обработкой
+					персональных данных</label>
+				<button class="callback__button" type="submit">Заказать звонок</button>
+			</form>
+		</div>
+
+		<div class="modal__thanks thanks" id="modal-thanks">
+			<h3 class="thanks__title title">Спасибо за Заявку!</h3>
+			<p class="thanks__request request">Оставьте заявку и мы свяжаемся с вами в течение 15 минут и ответим на все вопросы</p>
+			<picture class="thanks__picture">
+				<source srcset="<%=require('./assets/images/modal-thx.webp')%>" type="image/webp">
+				<img class="thanks__img" src="<%=require('./assets/images/modal-thx.png')%>" alt="">
+			</picture>
+		</div>
+	</section>
+
+	<section class="nature">
+		<div class="slider">
+			<div class="nature__item" data-bg="<%=require('./assets/images/bg-image.png')%>" data-bg-webp="<%=require('./assets/images/bg-image.webp')%>">
+				<div class="bg-container">
+					<div class="nature__bg-images">
+						<svg class="nature__wave">
+							<use xlink:href="#slider-wave"></use>
+						</svg>
+					</div>
+					<picture class="nature__picture">
+						<source srcset="<%=require('./assets/images/bg-bottle.webp')%>" type="image/webp">
+						<img class="nature__picture-img" src="<%=require('./assets/images/bg-bottle.png')%>" alt="">
+					</picture>
+				</div>
+				<div class="container nature__container">
+					<h2 class="nature__title">Энергия природы</h2>
+					<p class="nature__text">Хорошая вода улучшает вкус пищи и вина. Идеально сбалансированный минеральный состав воды SiENERGY подчеркивает и усиливает изысканный вкус блюд, позволяя насладиться каждым кусочком. Подается в красивых стеклянных бутылках, созданных для лучших ресторанов. Вода SiENERGY является членом Общества Fine Water Society.</p>
+				</div>
+				<div class="nature__gradient"></div>
+			</div>
+			<div class="nature__item" data-bg="<%=require('./assets/images/bg-image.png')%>" data-bg-webp="<%=require('./assets/images/bg-image.webp')%>">
+				<div class="bg-container">
+					<div class="nature__bg-images">
+						<svg class="nature__wave">
+							<use xlink:href="#slider-wave"></use>
+						</svg>
+					</div>
+					<picture class="nature__picture">
+						<source srcset="<%=require('./assets/images/bg-bottle.webp')%>" type="image/webp">
+						<img class="nature__picture-img" src="<%=require('./assets/images/bg-bottle.png')%>" alt="">
+					</picture>
+				</div>
+				<div class="container nature__container">
+					<h2 class="nature__title">Энергия природы</h2>
+					<p class="nature__text">Хорошая вода улучшает вкус пищи и вина. Идеально сбалансированный минеральный состав воды SiENERGY подчеркивает и усиливает изысканный вкус блюд, позволяя насладиться каждым кусочком. Подается в красивых стеклянных бутылках, созданных для лучших ресторанов. Вода SiENERGY является членом Общества Fine Water Society.</p>
+				</div>
+				<div class="nature__gradient"></div>
+
+			</div>
+			<div class="nature__item" data-bg="<%=require('./assets/images/bg-image.png')%>" data-bg-webp="<%=require('./assets/images/bg-image.webp')%>">
+				<div class="bg-container">
+					<div class="nature__bg-images">
+						<svg class="nature__wave">
+							<use xlink:href="#slider-wave"></use>
+						</svg>
+					</div>
+					<picture class="nature__picture">
+						<source srcset="<%=require('./assets/images/bg-bottle.webp')%>" type="image/webp">
+						<img class="nature__picture-img" src="<%=require('./assets/images/bg-bottle.png')%>" alt="">
+					</picture>
+				</div>
+				<div class="container nature__container">
+					<h2 class="nature__title">Энергия природы</h2>
+					<p class="nature__text">Хорошая вода улучшает вкус пищи и вина. Идеально сбалансированный минеральный состав воды SiENERGY подчеркивает и усиливает изысканный вкус блюд, позволяя насладиться каждым кусочком. Подается в красивых стеклянных бутылках, созданных для лучших ресторанов. Вода SiENERGY является членом Общества Fine Water Society.</p>
+				</div>
+				<div class="nature__gradient"></div>
+			</div>
+
+		</div>
+		<div class="nature__dots">
+			<div class="nature__dots-item"></div>
+			<div class="nature__dots-item"></div>
+			<div class="nature__dots-item"></div>
+		</div>
+	</section>
+
+</body>
+
+</html>

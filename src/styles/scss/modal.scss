@@ -1,0 +1,191 @@
+.modal {
+	display: none;
+}
+
+.callback {
+	padding: 20px;
+	max-width: 688px;
+	width: 100%;
+	&__title {
+		margin: 0 30px 15px 0;
+	}
+	&__request {
+		margin: 0 0 15px 0;
+	}
+	&__data {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+		flex-direction: column;
+	}
+	&__tel {
+		margin-bottom: 15px;
+	}
+	&__tel,
+	&__name {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		width: 100%;
+		justify-content: center;
+		cursor: pointer;
+		position: relative;
+	}
+	&__name-title {
+		position: absolute;
+		font-size: 10px;
+		color: $menu-color;
+		text-transform: none;
+		top: 15px;
+		left: 25px;
+		cursor: pointer;
+	}
+	&__content {
+		border: none;
+		cursor: pointer;
+		border: 1px solid #fff;
+		transition: $hover-delay;
+		color: $accent;
+		padding: 30px 25px 15px;
+		font-size: 16px;
+		@extend %btn-shadow;
+
+		&::placeholder {
+			color: #000;
+			transition: $hover-delay;
+		}
+		&:hover {
+			&::placeholder {
+				color: $accent;
+			}
+		}
+		&:focus {
+			border: 1px solid $accent;
+			outline: none;
+			&::placeholder {
+				color: $accent;
+			}
+		}
+	}
+	&__confidencial {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		margin-left: -20px;
+		top: 32px;
+		left: 33px;
+	}
+	&__confidencial-label {
+		position: relative;
+		cursor: pointer;
+		display: block;
+		text-transform: none;
+		color: $menu-color;
+		max-width: 480px;
+		margin-bottom: 25px;
+		padding-left: 45px;
+		font-size: 10px;
+		line-height: 15px;
+	}
+	&__check {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 28px;
+		height: 28px;
+		background-color: #fff;
+		@extend %btn-shadow;
+		margin-left: -45px;
+		top: 3px;
+	}
+
+	&__button {
+		display: block;
+		margin: 0 auto;
+		background-color: $accent;
+		color: #fff;
+		font-family: "Century Gothic-Bold";
+		border-radius: 0;
+		max-width: 450px;
+		width: 100%;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: $hover-delay;
+		@extend %btn-shadow;
+		font-size: 24px;
+		height: 65px;
+		&:hover {
+			background-color: #fff;
+			color: $accent;
+		}
+	}
+}
+
+.callback__confidencial:checked + .callback__check {
+	.callback__svg {
+		display: block;
+	}
+}
+.callback__confidencial + .callback__check {
+	.callback__svg {
+		display: none;
+	}
+}
+.callback__confidencial.error + .callback__check {
+	border: 1px solid red;
+}
+
+input.error {
+	border: 1px solid red;
+	color: red;
+	&::placeholder {
+		color: red;
+	}
+	&:hover {
+		color: red;
+		&::placeholder {
+			color: red;
+		}
+	}
+	&:focus {
+		border: 1px solid red;
+		color: red;
+		&::placeholder {
+			color: red;
+		}
+	}
+}
+
+#username-error {
+	position: relative;
+	top: -15px;
+	text-transform: none;
+	color: red;
+	font-size: 12px;
+}
+
+.thanks {
+	max-width: 688px;
+	width: 100%;
+	padding: 20px 20px 0;
+	&__picture {
+		display: block;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		height: 280px;
+	}
+	&__img {
+		max-width: 400px;
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}

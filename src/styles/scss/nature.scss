@@ -1,0 +1,128 @@
+.nature {
+	position: relative;
+	&__item {
+		min-height: 520px;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		display: flex !important;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	&__bg-images {
+		display: none;
+	}
+	&__picture {
+		display: none;
+	}
+	&__container {
+		z-index: 1;
+	}
+	&__gradient {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 1) 100%);
+	}
+	&__container {
+		text-align: center;
+	}
+	&__title {
+		font-size: 36px;
+		color: $accent;
+		margin: 0 0 30px 0;
+		letter-spacing: 5.6px;
+		font-weight: 400;
+	}
+	&__text {
+		font-size: 14px;
+		text-transform: none;
+		line-height: 1.5;
+	}
+	&__dots {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 60px;
+		max-width: 70px;
+		margin: 0 auto;
+		:nth-child(2) {
+			margin: 0 15px;
+		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 37px;
+	}
+	&__dots-item {
+		width: 12px !important;
+		height: 15px;
+		background-color: #000;
+		position: relative;
+		margin: 10px 0;
+		cursor: pointer;
+		transition: $hover-delay;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-bottom: 5px solid #000;
+			top: -5px;
+			transition: $hover-delay;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-top: 5px solid #000;
+			bottom: -5px;
+			transition: $hover-delay;
+		}
+		&:hover {
+			background-color: $menu-color;
+			&::before {
+				border-bottom: 5px solid $menu-color;
+			}
+			&::after {
+				border-top: 5px solid $menu-color;
+			}
+		}
+	}
+}
+
+.slick-current .nature__dots-item {
+	background-color: $accent;
+	height: 30px;
+	&::before {
+		border-bottom: 5px solid $accent;
+	}
+	&::after {
+		border-top: 5px solid $accent;
+	}
+}
+
+.bg-container {
+	width: 1440px;
+	height: 520px;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.nature__dots .slick-track {
+	display: flex;
+	align-items: center;
+	transform: translate3d(0, 0, 0) !important;
+}

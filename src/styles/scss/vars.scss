@@ -1,0 +1,48 @@
+$accent: #019ec4;
+$menu-color: #707070;
+$info-color: #5a5a5a;
+$hover-delay: all 0.3s ease 0s;
+
+%wave-blue {
+	width: 332px;
+	height: 471px;
+	position: absolute;
+}
+%btn-shadow {
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+%btn-call {
+	height: 32px;
+	width: 183px;
+	background-color: $accent;
+	border-radius: 8px;
+	border: none;
+	margin-left: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	transition: $hover-delay;
+	@extend %btn-shadow;
+
+	&:hover {
+		background-color: #fff;
+		color: $accent;
+	}
+}
+%info-language {
+	text-transform: capitalize;
+	display: flex;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	transition: $hover-delay;
+	.info__country {
+		margin-left: 10px;
+		padding-bottom: 2px;
+		border-bottom: 2px solid $accent;
+		border-bottom-style: dashed;
+	}
+	&:hover {
+		color: $accent;
+	}
+}

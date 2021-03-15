@@ -1,0 +1,128 @@
+@import "../scss/vars.scss";
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+body {
+	min-width: 320px;
+	overflow-x: hidden;
+	font-family: "Century Gothic-Regular";
+	font-weight: 400;
+	background-color: #f9f9f9;
+	text-transform: uppercase;
+}
+
+.btn {
+	border-radius: 8px;
+	border: none;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: $hover-delay;
+	&:hover {
+		background-color: $accent;
+		svg {
+			fill: #fff;
+			transition: $hover-delay;
+		}
+		span {
+			transition: $hover-delay;
+			color: #fff;
+		}
+	}
+	@extend %btn-shadow;
+}
+
+// .menu__button--close {
+// 	display: none;
+// }
+
+.title {
+	// font-size: 30px;
+	font-family: "Century Gothic-Bold";
+	letter-spacing: 3px;
+	font-size: 24px;
+
+	// @media (max-width: 768px) {
+	// 	font-size: 24px;
+	// }
+}
+.request {
+	// font-size: 18px;
+	font-size: 16px;
+
+	text-transform: none;
+	line-height: 27px;
+}
+
+.menu__overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+.overlay-active {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1470px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 40px;
+	}
+	.title {
+		font-size: 30px;
+	}
+	.request {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		padding: 0 20px;
+	}
+}
